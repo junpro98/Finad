@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+/* free_board_write */
+#write_container{
+	width: 1300px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+#write_container form input:nth-child(1) {
+	width: 1300px;
+	padding: 3px;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+#write_container form input[type="submit"] {
+	margin-left: 550px;
+	margin-top: 50px;
+    width: 200px;
+    height: 61px;
+    font-size: 25px;
+    color: white;
+    border: 1px solid #346aff;
+    border-radius: 3px;
+    background-color: #346aff;
+    cursor: pointer;
+    
+}
+textarea {
+	width: 1300px;
+	height: 500px;
+	padding: 3px;
+	resize: none;
+}
+.ck-editor__editable { height: 400px; }
+.ck-content { font-size: 12px; }

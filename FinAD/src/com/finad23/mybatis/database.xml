@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper_name">
+	<select id="categoryId" resultType="com.finad23.jjj.Influ_info"
+		parameterType="com.finad23.jjj.Influ_info">
+		SELECT user.*, user_mypage.*,
+		FORMAT(user_mypage.subscribers, 0) AS
+		subscribers FROM project.user
+		LEFT JOIN project.user_mypage ON
+		user.influUserId =
+		user_mypage.influUserId WHERE user.category LIKE
+		CONCAT('%',#{category},'%') ORDER BY user_mypage.subscribers DESC;
+	</select>
+	<select id="companyUserID" resultType="com.finad23.DTO.CompanyUserMypageDTO" parameterType="com.finad23.DTO.CompanyUserMypageDTO">
+		SELECT * FROM project.company JOIN project.company_mypage ON project.company.companyId = project.company_mypage.companyId WHERE project.company.companyId = #{cid} LIMIT 0, 1000;
+	</select>
+	<select id="companyBoardTextID"
+		resultType="com.finad23.DTO.CBoardVolunteerDTO" parameterType="com.finad23.DTO.CBoardVolunteerDTO">
+		SELECT * FROM project.companyboard join volunteer on companyboardNum = companyBoardNumber where companyboardNumber = #{vnum};
+		
+	</select>
+	<select id="companyBoardID"
+		resultType="com.finad23.DTO.CompanyBoardDTO">
+		select * from project.companyboard  ORDER BY companyBoardNum DESC;
+		
+	</select>
+	
+	<insert id="companyWriteID" parameterType="com.finad23.DTO.CompanyBoardDTO">
+    insert into project.companyboard (title, companyName, companyInfo1, companyInfo2, companyInfo3, recruitmentDate1, recruitmentDate2,
+    promotionDate1, promotionDate2, recruitmentNum, avgViewers, subscribers, sex, underachiever, promotionMoney,
+    promotionType, previousPromotion1, previousPromotion2, previousPromotion3, text, companyWriteDate ) 
+    values(#{title}, #{companyName}, #{companyInfo1}, #{companyInfo2}, #{companyInfo3}, #{recruitmentDate1},
+    #{recruitmentDate2}, #{promotionDate1}, #{promotionDate2}, #{recruitmentNum}, #{avgViewers}, #{subscribers},
+    #{sex}, #{underachiever}, #{promotionMoney}, #{promotionType}, #{previousPromotion1}, #{previousPromotion2},
+    #{previousPromotion3}, #{text}, CURRENT_TIMESTAMP());
+	</insert>
+	<select id="cBoardVolID"
+		resultType="com.finad23.DTO.CBoardVolunteerDTO">
+		select * from project.volunteer where companyboardNumber = #{vnum} ORDER BY time;
+	</select>
+	
+<select id="companyBoardSearchID" resultType="com.finad23.DTO.CompanyBoardDTO" parameterType="map">
+    SELECT * FROM project.companyboard 
+<!--     WHERE promotionType LIKE CONCAT('%',#{type},'%') -->
+    <where>
+        <if test="promotionType != null and !promotionType.isEmpty()">
+            AND promotionType LIKE CONCAT('%',#{type},'%')
+            <!-- <foreach collection="promotionType.split(',')" item="item" open="(" separator="," close=")">
+                #{promotionType}
+            </foreach> -->
+        </if>
+        <if test="duration != null and !duration.isEmpty()">
+            AND duration IN
+            <foreach collection="duration.split(',')" item="item" open="(" separator="," close=")">
+                #{promotionType}
+            </foreach>
+        </if>
+        <if test="category != null and !category.isEmpty()">
+            AND category IN
+            <foreach collection="category.split(',')" item="item" open="(" separator="," close=")">
+                #{promotionType}
+            </foreach>
+        </if>
+        <if test="search != null and !search.isEmpty()">
+            AND title LIKE CONCAT('%', #{search}, '%')
+        </if>
+    </where>
+    ORDER BY companyBoardNum DESC;
+</select>
+
+
+
+
+	
+	<select id="filterId" resultType="com.finad23.DTO.CategoryFilterDTO" parameterType="com.finad23.DTO.CategoryFilterDTO">
+     <![CDATA[
+    SELECT user.*, user_mypage.*, FORMAT(user_mypage.subscribers, 0) AS subscribers
+	FROM project.user
+	LEFT JOIN project.user_mypage ON user.influUserId = user_mypage.influUserId
+	WHERE user.category LIKE CONCAT('%', #{category}, '%')
+	AND
+	(
+    	CASE 
+			WHEN #{shorts} = 'true'    THEN (user_mypage.shorts LIKE '%true%')
+			WHEN #{shorts} = 'false'    THEN (user_mypage.shorts LIKE '%false%')
+			ELSE (user_mypage.shorts LIKE '%true%' OR user_mypage.shorts LIKE '%false%')
+		END
+	)
+	AND
+	(
+		CASE
+			WHEN #{price} = 'under30' THEN ((user_mypage.avgviewers * 0.001) * 30) < 30
+			WHEN #{price} = 'over30' THEN ((user_mypage.avgviewers * 0.001) * 30) BETWEEN 30 AND 100
+			WHEN #{price} = 'over100' THEN ((user_mypage.avgviewers * 0.001) * 30) BETWEEN 100 AND 300
+			WHEN #{price} = 'over300' THEN ((user_mypage.avgviewers * 0.001) * 30) > 300
+			ELSE ((user_mypage.avgviewers * 0.001) * 30)
+		END
+	)
+	AND
+	(
+		CASE
+			WHEN #{sub} = 'under10' THEN (user_mypage.subscribers < 100000)
+			WHEN #{sub} = 'over10' THEN (user_mypage.subscribers BETWEEN 100000 AND 200000)
+			WHEN #{sub} = 'over20' THEN (user_mypage.subscribers BETWEEN 200000 AND 500000)
+			WHEN #{sub} = 'over50' THEN (user_mypage.subscribers BETWEEN 500000 AND 1000000)
+			WHEN #{sub} = 'over100' THEN (user_mypage.subscribers > 1000000)			
+			ELSE (user_mypage.subscribers)
+		END
+	)
+	AND
+	(
+		CASE
+			WHEN #{avg} = 'under1000' THEN (user_mypage.avgviewers < 1000)
+			WHEN #{avg} = 'over1000' THEN (user_mypage.avgviewers BETWEEN 1000 AND 5000)
+			WHEN #{avg} = 'over5000' THEN (user_mypage.avgviewers BETWEEN 5000 AND 10000)
+			WHEN #{avg} = 'over10000' THEN (user_mypage.avgviewers > 10000)
+			ELSE (user_mypage.avgviewers)
+		END
+	)
+	ORDER BY user_mypage.subscribers DESC;
+
+    ]]>
+
+	</select>
+	
+	<select id="itemReviewNumber" resultType="com.finad23.DTO.SellerDTO"
+		parameterType="com.finad23.DTO.SellerDTO">
+		SELECT adstore.*, adstorereview.* 
+		FROM project.adstore
+		LEFT JOIN project.adstorereview ON adstore.itemNumber = adstorereview.nomalUserId
+		WHERE adstore.itemNumber LIKE CONCAT('%1%');
+	</select>
+	
+	<select id="cateSearchId" resultType="com.finad23.DTO.CateSearchDTO" parameterType="com.finad23.DTO.CateSearchDTO">
+	SELECT user.*, user_mypage.*, FORMAT(user_mypage.subscribers, 0) AS subscribers
+	FROM project.user
+	LEFT JOIN project.user_mypage ON user.influUserId = user_mypage.influUserId
+	WHERE user.category LIKE CONCAT('%', #{category}, '%')
+	AND user.nickName LIKE CONCAT('%', #{nickname}, '%')
+	ORDER BY user_mypage.subscribers DESC;
+	</select>
+
+</mapper>

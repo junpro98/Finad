@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+footer {
+    position: absolute;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #0d072c;
+}
+
+.footer_class {
+    width: 1300px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+footer p {
+    color: #fff;
+    font-weight: 400;
+}

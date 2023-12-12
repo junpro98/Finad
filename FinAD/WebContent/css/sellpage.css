@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+.cart  {
+  
+    width: 130px;
+    height: 40px;
+    color: #346aff;
+    font-size: 20px;
+    border: 1px solid #346aff;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.order {
+    width: 130px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #346aff;
+    border-radius: 3px;
+    background-color: #346aff;
+    cursor: pointer;
+}
+
+
+
+
+
+.info {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+
+.section{
+  width: 1000px;
+  margin: 0px auto;
+  display: block;
+  padding: 20px;
+  margin-top: 100px;
+  
+}
+
+
+
+.summary{
+  width: 380px;
+  margin-top: 50px;
+  font-size: 20px;
+  border: 2px solid #c0c0c0;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+#product-name{
+	font-size: 40px;
+}
+
+
+/* .product-img{
+  width: 460px;
+  height: 460px;
+  border-radius: 12px;
+  margin: 0 auto;
+} */
+
+.slide {
+    width: 460px;
+    height: 460px;
+    overflow: hidden;
+}
+
+.slide ul {
+    display: flex;
+}
+
+.slide li {
+    list-style: none;
+}
+
+
+.slide img {
+    width: 460px;
+    height: 460px;
+}
+
+
+.product-img{
+  width: 220px;
+  height: 220px;
+  border: 2px solid #c0c0c0;
+  border-radius: 12px;
+ 
+}
+
+
+.nikekr{
+    font-size: 25px;
+    color: #014D81;
+}
+#nikr{
+    color: rgb(1, 39, 255);
+}
+
+
+.total{
+  
+    color: rgb(170, 40, 40);
+    font-size: 30px;
+    padding: 5px;
+}
+
+
+.choose{
+    margin: 0 auto;
+    width: 55px;
+    height: 25px;
+    margin-left: 5px;
+    background-color: rgb(240, 240, 240);
+}
+.chs{
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.yyy {
+    display: flex;
+   margin-right: 15px;
+}
+
+
+.org_price{
+    color: rgb(250, 105, 105);
+}
+
+.summary h5{
+    color: rgb(161, 161, 161);
+}
+
+.delivery{
+    font-size: 15px;
+    color: #A83A4F;
+
+}
+
+
+.arrival{
+    font-size: 15px;
+    color: #4d994d;
+}
+
+.origin{
+    font-size: 15px;
+    color: #666565;
+}
+
+
+.detailcut{					<--상세 페이지-->
+  width: 860px;
+  height: 460px;
+  /* border: 2px solid rgb(17, 0, 0); */
+  border-radius: 12px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+
+
+.detail{
+  font-size: 30px;
+}
+
+.detail img {
+    width: 960px;
+}
+
+.notice_last{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgb(92, 91, 91);
+}
+
+.review{
+    padding: 80px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+.ratingstar4{
+color: rgb(60, 60, 253);
+
+}
+.re_id{
+font-size: 20px;
+
+}
+
+.re_per{
+margin-top: 20px;
+}
+
+
+
+.re_re{
+    font-size: 50px;
+    color: rgb(255, 86, 86);
+}
+
+.re_text{
+    color: #666565;
+}
+
+
+
+.paging {
+    margin-top: 40px;
+    
+}
+
+.paging a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    padding: 5px;
+    background-color: #ffffff;
+    color: rgb(83, 83, 83);
+   
+}
+
+.prev a, .next a{
+    color: rgb(117, 117, 117);
+     border-radius: 3px ;
+     border: 2px solid rgb(117, 117, 117);
+    background-color: rgb(248, 248, 248);
+}
+.num .on{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: 2px solid rgb(54, 54, 54); 
+}
+
+
+/* 장바구니 */
+.cart_div img {
+    width: 64px;
+    position: fixed;
+    right: 200px;
+  bottom: 100px;
+    background-color: white;
+    border: 3px solid #A83A4F;
+    border-radius: 50%;
+}
+
+
+footer {
+  width: 100%;
+  margin-top: 200px;
+  background-color: #014D81;
+}
+
+.footer_class {
+  width: 1300px;
+  height: 200px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.footer_class a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.footer_class p {
+  color: #aaa;
+}

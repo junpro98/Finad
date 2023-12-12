@@ -1,0 +1,169 @@
+#text_header{
+	width: 1300px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+#text_header p {
+	text-align: right;
+}
+
+#text_container{
+	width: 1300px;
+	margin: 0 auto;
+}
+body #text_container #info_box {
+	border-collapse:separate;
+}
+
+.write_date{
+    margin: 4px;
+    padding: 7px;
+    /* height: 40px; */
+    font-size: 17px;
+    
+}
+#submit_btn{
+    margin-top: 100px;
+    margin-left: 450px;
+    width: 400px;
+    height: 61px;
+    font-size: 25px;
+    border: 1px solid #c9c9ff;
+    background-color: #c9c9ff;
+    border-radius: 25px;
+}
+.title{
+	width:200px;
+	height: 55px;
+	font-size: 35px;
+	color:#346aff;
+	padding: 3px;
+}
+.info_title{
+	padding: 3px;
+	font-size: 28px;
+	color: #636363;
+}
+#company_name{
+	font-size: 40px;
+	color: #FF766B;
+/* 	font-weight: bold; */
+	text-align: right;
+}
+#content_title{
+	width: 100%;
+	height: 40px;
+	font-size: 16px;
+	padding: 3px;
+}
+.content{
+	width:1100px;
+	height: 55px;
+	font-size: 16px;
+	padding: 3px;
+}
+.content2{
+	width:450px;
+	height: 55px;
+	font-size: 25px;
+	padding: 3px;
+}
+.content3{
+	width: 200px;
+	height: 55px;
+	font-size: 16px;
+	padding: 3px;
+	padding-left: 125px;
+}
+.content4{
+	width:450px;
+	height: 55px;
+	font-size: 65px;
+	padding: 3px;
+}
+span{
+	font-size: 16px;
+}
+
+td input[type="text"] {
+	width: 200px;
+	height: 40px;
+	font-size: 20px;
+}
+#c_text {
+	width: 1300px;
+	height: 500px;
+	padding: 3px;
+	resize: none;
+	font-size: 30px;
+}
+#info_box{
+	width: 1300px;
+	margin-top: 25px;
+	padding: 10px;
+	border-radius: 9px;
+	border: 1px solid #c0c0c0;
+	margin-bottom: 100px;
+}
+#submit_btn1{
+	text-align: center;
+}
+#submit_btn1 input[type="submit"]{
+	margin: 0 auto;
+    margin-top: 50px;
+    width: 200px;
+    height: 61px;
+    font-size: 25px;
+    color: white;
+    border: 1px solid #346aff;
+    border-radius: 3px;
+    background-color: #346aff;
+    cursor: pointer;
+}
+#submit_btn2 {
+	text-align: right;
+}
+
+#submit_btn2 input[type="submit"] {
+	margin: 0 auto;
+    margin-top: 50px;
+    width: 85px;
+    height: 35px;
+    font-size: 18px;
+    color: white;
+    border: 1px solid #346aff;
+    border-radius: 3px;
+    background-color: #346aff;
+    cursor: pointer;
+}
+
+/* 지원자 목록 */
+#vol_list {
+	padding: 10px;
+	text-align: right;
+}
+.modal-body{
+	margin: 20px;
+}
+.modal-body td{
+/* 	margin: 5px; */
+	padding: 5px;
+}
+.modal-body td:nth-child(1) {
+	width: 150px;	
+}
+.modal-body td:nth-child(2) {
+	width: 50px;	
+}.modal-body td:nth-child(3) {
+	width: 100px;	
+}.modal-body td:nth-child(4) {
+	width: 100px;	
+}.modal-body td:nth-child(5) {
+	width: 115px;	
+}
+
+.btn-primary {
+	width: 150px;
+	height: 50px;
+	font-size: 22px !important;
+}

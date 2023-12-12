@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+h1 {
+	font-size: 50px;
+	color: #050c58;
+}
+
+
+table{
+	border-collapse:collapse;
+	font-size: 18px;
+}
+
+/* free_board_text */
+#text_header {
+	width: 1300px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+#text_header .title{
+	font-size: 24px;
+}
+
+#text_info td:nth-child(1){
+	width: 150px;
+}
+#text_info td:nth-child(2){
+	width: 150px;
+}
+#text_info td:nth-child(3){
+	width: 700px;
+	padding-left: 15px;
+}
+#text_info td:nth-child(4){
+	width: 100px;
+	text-align: center;
+}
+#text_info td:nth-child(5){
+	width: 100px;
+	text-align: center;
+}
+#text_info td:nth-child(6){
+	width: 100px;
+	text-align: center;
+}
+#text_header td{
+	border-bottom:1px solid gray;
+	padding: 3px;
+}
+
+#text_header #text{
+	border-bottom:0;
+}
+
+#text p:last-child {
+	padding-bottom: 170px;
+}
+#text p {
+	word-break: break-word;
+	font-size: 22px;
+}
+#free_board_btn{
+	margin-top: 10px;
+	margin-left: 1332px;
+}
+#free_board_btn input {
+	 width: 85px;
+    height: 35px;
+    font-size: 18px;
+    color: white;
+    border: 1px solid #346aff;
+    border-radius: 3px;
+    background-color: #346aff;
+    cursor: pointer;
+	float: right;
+}
+
+table tr td input {
+	padding: 3px;
+	margin-left: 5px;
+}
+
+.voting-buttons {
+/*     text-align: center; 버튼을 가운데 정렬합니다. */
+    width: 120px;
+    margin:0 auto;
+    margin-top:20px;
+    padding-bottom: 50px;
+}
+
+.vote-button {
+    background: none; /* 배경 이미지 제거 */
+    border: none; /* 테두리 제거 */
+    cursor: pointer;
+}
+
+#upvote-button {
+    margin-right: 10px; /* 추천 버튼 오른쪽 여백 추가 */
+}
+
+.vote-button:hover {
+    filter: brightness(1.2); /* 비추천 버튼을 마우스 오버 시 밝게 표시 (선택 사항) */
+}
+
+/*댓글*/
+h4{
+	width: 1300px;
+	margin: 0 auto;
+	margin-top: 20px;
+/* 	border-bottom: 1px solid gray; */
+	margin-bottom: 20px;
+}
+#free_board_comment_list {
+	width: 1300px;
+	margin: 0 auto;
+	word-break: break-word;
+}
+#free_board_comment_list td {
+	height: 30px;
+}
+#free_board_comment_list tr {
+	border-bottom: 1px solid gray;
+}
+#free_board_comment_list tr:first-child {
+	border-top: 1px solid gray;
+}
+
+
+#free_board_comment_list td:nth-child(1) {
+	width: 30px;
+	text-align: center;
+}
+#free_board_comment_list td:nth-child(2) {
+	width: 100px;
+	text-align: center;
+}
+#free_board_comment_list td:nth-child(3) {
+	width: 1000px;
+}
+#free_board_comment_list td:nth-child(4) {
+	width: 170px;
+	text-align: center;
+}
+
+
+#free_board_comment form {
+	width: 1300px;
+	height: 150px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#free_board_comment form table td{
+	height: 100px;
+}
+
+#free_board_comment form textarea {
+	width: 1000px; 
+	height: 100px;
+	resize: none;
+
+}
+
+#free_board_comment form input {
+	margin-left: 97px;
+	width: 200px;
+	height: 100px;
+	background-color: white;
+	font-size: 30px;
+}
+
+
+

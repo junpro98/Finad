@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 100;
+    
+}
+
+header {
+    position: relative;
+    height: 100px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+header a,
+nav a {
+    text-decoration: none;
+}
+
+.top_button a {
+    padding-left: 5xp;
+}
+
+.top_button img {
+    width: auto;
+    height: 15px;
+    padding-left: 10px;
+}
+
+#main_logo {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 250px;
+    height: auto;
+}
+
+.top_button {
+    position: absolute;
+    top: 25px;
+    right: 0px;
+}
+
+.form-control {
+    width: 320px;
+    height: 30px;
+    font-size: 17px;
+    color: black;
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.header_search {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+
+.nav_div {
+    display: flex;
+}
+
+.nav_div a {
+    text-decoration: none;
+    color: #014D81;
+}
+
+.gnbbox {
+    width: 730px;
+    height: 250px;
+    background: white;
+    position: absolute;
+    top: 180px;
+    border: 5px solid #014D81;
+    border-radius: 15px;
+}
+
+.nav_div {
+    width: 1300px;
+    margin: 30px auto;
+}
+
+.nav_div li {
+    font-family: 'Do Hyeon', sans-serif;
+    list-style: none;
+    line-height: 40px;
+}
+
+.gnb li {
+    margin-right: 30px;
+}
+
+.gnb a {
+    color: #014D81;
+    font-size: 18px;
+    font-weight: 10;
+}
+
+.gnb img {
+    height: 25px;
+    /* width: 32px; */
+}
+
+.category {
+    /* font-size: 20px; */
+    color: #014D81;
+    display: flex;
+    position: absolute;
+}
+
+.category_text {
+    font-size: 30px;
+    color: #222222;
+    line-height: 40px;
+}
+
+.nav_ul {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: space-between;
+    width: 700px;
+    margin-left: 100px;
+}
+
+.category_div {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: flex;
+}
+
+.category_div li {
+    padding: 5px;
+    /* margin-left: 5px; */
+}
+
+.gnb div {
+    display: flex;
+    align-items: center;
+}
+
+.li_text {
+    padding-left: 10px;
+}
+
+.category_div li:nth-child(1) {
+    margin-left: 15px;
+}
+
+.category_div li:nth-child(2) {
+    margin-left: 15px;
+}
+
+.category_div li:nth-child(3) {
+    margin-left: 15px;
+}
+
+.category_div li:nth-child(4) {
+    margin-left: 15px;
+}
+
+.category_div li:nth-child(5) {
+    margin-left: 15px;
+}
+
+.nav_ul li a:after {
+    display: block;
+    content: "";
+    width: 78px;
+    height: 10px;
+    border-bottom: 1px solid #000;
+    margin: -20px auto;
+    transform: scaleX(0);
+    transition: all 250ms ease-in-out;
+}
+
+nav ul li:hover a:after {
+    transform: scaleX(1);
+}
+
+nav ul li:nth-child(2) a:after {
+    width: 130px;
+}
+
+nav ul li:nth-child(3) a:after {
+    width: 78px;
+}
+
+nav ul li:nth-child(4) a:after {
+    width: 60px;
+}
+
+nav ul li:nth-child(5) a:after {
+    width: 70px;
+}
+
+
+#product-list a{
+    text-decoration: none;
+  color: black;
+  
+
+}
+.main_review{
+    margin: 0 auto;
+    width: 1300px;
+    text-align: center;
+}
+
+
+.writeTitle{
+    width: 35%;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 80px;
+    color: rgb(247, 55, 55);
+}
+
+
+.star-rating {
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    justify-content: space-around;
+    padding: 0 0.2em;
+    text-align: center;
+    width: 5em;
+  }
+   
+  .star-rating input {
+    display: none;
+  }
+   
+  .star-rating label {
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2.3px;
+    -webkit-text-stroke-color: #222222;
+    cursor: pointer;
+  }
+   
+  .star-rating :checked ~ label {
+    -webkit-text-fill-color: gold;
+  }
+   
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    -webkit-text-fill-color: #fff58c;
+  }
+
+
+
+
+.writeForm{
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: left;
+    color: #0080ff;
+}
+
+.writeForm input[type=text]{
+    font-size: 18px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 520px;
+    border: 1px solid grey;
+    
+}
+
+.writeTextarea{
+    width: 100%;
+    height: 300px;
+    resize: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+   
+}
+.writeTextarea02{
+    width: 100%;
+    height: 100px;
+    resize: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+   
+}
+.writeTextarea03{
+    width: 100%;
+    height: 40px;
+    resize: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+   
+}
+
+.writeBtn{
+    width: 95%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.writeBtn input[type=submit], .writeBtn input[type=button]{
+   font-size: 16px;
+   width: 100px;
+   height: 56px;
+   font-size: 26px;
+   border-width: 1px;
+   border-color: #d81818;
+   border-radius: 15px;
+  
+   background: #ed2f2f;
+   background-image: -webkit-linear-gradient(#f19898, #dd0e0e);
+   color: #fff;
+   box-sizing: border-box;
+   margin-top: 10px;
+   font-weight: 100;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 푸터 시작 */
+footer {
+    width: 100%;
+    margin-top: 200px;
+    background-color: #014D81;
+}
+
+.footer_class {
+    width: 1300px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.footer_class a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.footer_class p {
+    color: #aaa;
+}

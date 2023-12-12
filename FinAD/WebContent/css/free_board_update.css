@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+
+/* free_board_text */
+#text_header {
+	width: 1300px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+#text_info td:nth-child(1){
+	width: 100px;
+}
+#text_info td:nth-child(2){
+	width: 100px;
+}
+#text_info td:nth-child(3){
+	width: 650px;
+	padding-left: 15px;
+}
+#text_info td:nth-child(4){
+	width: 50px;
+	text-align: center;
+}
+#text_info td:nth-child(5){
+	width: 50px;
+	text-align: center;
+}
+#text_info td:nth-child(6){
+	width: 50px;
+	text-align: center;
+}
+#text p {
+	word-break: break-word;
+}
+#text p:last-child {
+	padding-bottom: 300px;
+}
+#free_board_btn{
+	margin-top: 10px;
+	margin-left: 745px;
+}
+#free_board_btn form {
+	
+}
+#free_board_btn input {
+	width: 55px;
+	height: 25px;
+}
+#free_board_btn table tr td input {
+	padding: 3px;
+	margin-left: 5px;
+}
+input[name="input_name"]{
+	width: 1300px;
+	padding: 3px;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+#free_board_btn input[type="submit"] {
+	margin-top: 50px;
+    width: 200px;
+    height: 61px;
+    font-size: 25px;
+    color: white;
+    border: 1px solid #346aff;
+    border-radius: 3px;
+    background-color: #346aff;
+    cursor: pointer;
+    
+}
+

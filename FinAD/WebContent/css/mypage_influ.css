@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+.main {
+	width: 1300px;
+	margin: 80px auto;
+	height: 1450px;
+}
+
+.main li {
+	list-style: none;
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: 500;
+	color: #FF766B;
+}
+
+.top_info {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.user_img img {
+	height: 256px;
+	width: 256px;
+	border-radius: 50%
+}
+
+.top_info li {
+	padding: 5px;
+	font-size: 30px;
+}
+
+.div_ul {
+	margin-left: 30px;
+	width: 850px;
+}
+
+.div_sns ul{
+	display: flex;
+}
+
+.div_sns img {
+	width: 64px;
+	height: 64px;
+}
+
+hr {
+	width: 1300px;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left:auto;
+	border: 2px solid #014D81;
+}
+
+.div_data {
+	display: flex;
+	margin-left: 70px;
+}
+
+.div_data li {
+	font-size: 40px;
+	padding: 7px
+}
+
+.div_data div:nth-child(1) {
+	border-right: 3px solid #014D81;
+}
+
+.div_data2 ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 25px;
+}
+
+.div_data2 li{
+	width: 260px;
+	text-align: center;
+	
+}
+
+.div_data2 p {
+	font-size: 70px;
+	color: #FF3A56;
+}
+
+.gender_type {
+	width: 150px;
+	height: 150px;
+  	border-radius: 50%;
+  	margin: 0 auto;
+}
+
+.sub_age {
+	width: 150px;
+	height: 150px;
+  	border-radius: 50%;
+  	margin: 0 auto;
+}
+
+h2 {
+	margin-top:50px;
+	width:100px;
+	border-bottom: 3px solid #014D81; 
+	font-size: 30px;
+}
+
+.div_category ul {
+	display: flex;
+	overflow: auto;
+}
+
+.div_category li{
+	font-size: 25px;
+	color: #FF766B;
+	padding: 15px;
+}
+
+.text {
+	margin-top: 15px;
+	border: 2px solid #014D81;
+	width: 1300px;
+	height: 300px;
+	font-size: 28px;
+}
+
+.check_pro {
+	margin: 0 auto;
+    margin-top: 50px;
+    width: 200px;
+    height: 61px;
+    font-size: 25px;
+    color: white;
+    border: 1px solid #346aff;
+    border-radius: 3px;
+    background-color: #346aff;
+    cursor: pointer;
+}
+
+.man_woman, .avg_age {
+	display: flex;
+	font-size: 25px;
+}
+
+.man {
+	color: #014D81;
+	width: 130px;
+}
+
+.woman {
+	color: #FF3A56;
+}
+
+.ten {
+	color:#02f533;
+}
+
+.twe {
+	color:#02b4f5;
+}
+
+.thr {
+	color:#FF3A56;
+}
+
+.fort {
+	color:#ffa600;
+}
+
+.fift {
+	color:#f5dd02;
+}
+
+.div_category img {
+	width: 80px;
+	height: 80px;
+}
+
+.cate_div {
+	text-align: center;
+}
+
+#showInfo {
+	margin: 0 auto;
+    width: 200px;
+    height: 61px;
+    font-size: 25px;
+    color: white;
+    border: 1px solid #346aff;
+    border-radius: 3px;
+    background-color: #346aff;
+    cursor: pointer;
+}
+

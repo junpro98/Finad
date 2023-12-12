@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>creator_page</title>
+        <link rel="stylesheet" href="css/creator_page.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+        <script src="js/creator_page.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="top_div">
+                <a href="main.html"><img src="img/logo.png" alt="로고" id="main_logo"></a>
+                <div class="top_button">
+                    <a href="login.html"><img src="img/login.png" alt=""></a>
+                    <a href="signup_agree.html"><img src="img/signup.png" alt=""></a>
+                    <a href="#"><img src="img/mypage.png" alt=""></a>
+                </div>
+            </div>
+            <div class="header_search">
+                <input type="search" class="form-control" placeholder="search">
+            </div>
+        </header>
+        <div class="nav_div">
+            <nav>
+                <p class="gnbbox"></p>
+                <div class="category">
+                    <div class="category_text">카테고리</div>
+                    <ul class="nav_ul">
+                        <li class="nav_li01"><a href="company_written_list.html" target="_blank">광고게시판</a></li>
+                        <li class="nav_li02"><a href="" target="_blank">크리에이터 게시판</a></li>
+                        <li class="nav_li03"><a href="" target="_blank">자유게시판</a></li>
+                        <li class="nav_li04"><a href="" target="_blank">광고현황</a></li>
+                        <li class="nav_li05"><a href="adstore.html" target="_blank">ADStore</a></li>
+                    </ul>
+                    <div class="category_div">
+                        <div class="gnb_div">
+                            <ul class="gnb">
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="categori01.html" target="_blank">
+                                        <div><img src="img/beauty_img.png" alt="">
+                                            <div class="li_text">뷰티 * 패션</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/food_img.png" alt="">
+                                            <div class="li_text">먹방</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/BJ_img.png" alt="">
+                                            <div class="li_text">BJ * 엔터테이너</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/vlog_img.png" alt="">
+                                            <div class="li_text">vlog * 일상</div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="gnb_div">
+                            <ul class="gnb">
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/game_img.png" alt="">
+                                            <div class="li_text">게임</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/IT_img.png" alt="">
+                                            <div class="li_text">IT * 전자기기</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/music_img.png" alt="">
+                                            <div class="li_text">음악 * 춤</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/cook_img.png" alt="">
+                                            <div class="li_text">요리 * 베이킹</div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="gnb_div">
+                            <ul class="gnb">
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/travel_img.png" alt="">
+                                            <div class="li_text">여행 * 아웃도어</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/pet_img.png" alt="">
+                                            <div class="li_text">동물 * 펫</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/sports_img.png" alt="">
+                                            <div class="li_text">스포츠 * 건강</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/movie_img.png" alt="">
+                                            <div class="li_text">영화 * 애니</div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="gnb_div">
+                            <ul class="gnb">
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/car_img.png" alt="">
+                                            <div class="li_text">자동차</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/kid_img.png" alt="">
+                                            <div class="li_text">키즈 * 플레이</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/education_img.png" alt="">
+                                            <div class="li_text">교육</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/real estate_img.png" alt="">
+                                            <div class="li_text">부동산 * 투자</div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="gnb_div">
+                            <ul class="gnb">
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/Politics_img.png" alt="">
+                                            <div class="li_text">정치 * 시사</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/palette_img.png" alt="">
+                                            <div class="li_text">그림 *만들기</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/clover_img.png" alt="">
+                                            <div class="li_text">운세 * 타로</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/another_img.png" alt="">
+                                            <div class="li_text">기타</div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="creator_title">
+            <div>
+                <p class="creator_title_p">OOO YouTube 채널분석 리포트</p>
+            </div>
+            <div class="creator_info">
+                <div class="creator_img">
+                    <a href="https://www.youtube.com/@oking1025" target="_blank"><img src="img/BJ.png" alt="" class="creatorimg"></a>
+                    <ul>
+                        <li>
+                            <p>OOTV</p>
+                        </li>
+                        <li>
+                            <p>한국어 | 한국</p>
+                        </li>
+                        <li>
+                            <div class="creator_info_img">
+                                <a href="https://www.youtube.com/@oking1025" target="_blank"><img src="img/youtube.png" alt=""></a>
+                                <a href="https://www.instagram.com/oking1025/" target="_blank"><img src="img/instagram.png" alt=""></a>
+                                <a href="https://www.facebook.com/oking1025" target="_blank"><img src="img/facebook.png" alt=""></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="button_div">
+                        <form action="jsp/creator_page.jsp" name="button" method="post">
+                            <input type="button" name="creator_button" class="creator_button" value="OOTV 연락하기">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info_text">
+            <p>소개 글</p>
+            <div class="text_box">
+                소개글~~~~(마이페이지에서 데이터 들고 올 예정)
+            </div>
+        </div>
+        <div class="creator_play">
+            <p>OOTV 영상</p>
+            <div>
+                <iframe width="1300" height="650" src="https://www.youtube.com/embed/Z-wkuJNpFWE?si=ZCjbHkh3zHUCf26R?mute=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="top_play">
+            <p>가장 높은 조회수 순</p>
+            <div class="top_play_div">
+                <div><iframe width="410" height="235" src="https://www.youtube.com/embed/vGJXAJlZZOw?si=p2P8Y0kc76FZ-b8x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div><iframe width="410" height="235" src="https://www.youtube.com/embed/wuUtnXmi7zs?si=Oy2eW6bnbBhjWwyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div><iframe width="410" height="235" src="https://www.youtube.com/embed/HSREHS-l9Hg?si=ufKAGLLhX-vHDrBu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            </div>
+        </div>
+        <div class="follow">
+            <p class="follow_p1">평균 구독자 증가 등급</p>
+            <p class="follow_p2">데이터를 통해 들고올 예정</p>
+            <p class="follow_p3">0.01%-0.99%는 유사한 채널의 평균적인 팔로워수를 증가 등급을 나타나는 수치입니다.</p>
+        </div>
+        <div class="avg_look">
+            <p class="avg_look_p1">평균 조회수</p>
+            <p class="avg_look_p2">데이터를 통해 들고올 예정</p>
+            <p class="avg_look_p3">최신 10개 영상의 평균 조회수입니다.</p>
+        </div>
+        <p class="add_info">추가 정보사항</p>
+        <div class="chart">
+            <div class="donut_box">
+                <ul class="donut_ul">
+                    <li class="donut"></li>
+                    <li class="donut_text">구독자 성비<br><span>남38%</span><span class="femail_color"> 여72%</span></li>
+                </ul>
+            </div>
+            <div class="donut_box">
+                <ul class="donut_ul01">
+                    <li class="donut01"></li>
+                    <li class="donut_text01">구독자 연령<br><span class="ten">10대</span><span class="twenty"> 20대</span><span class="thirty"> 30대</span><span class="forty"> 40대</span><span class="fifty"> 50대이상</span></li>
+                </ul>
+            </div>
+            <div class="line_box">
+                <ul class="line_ul">
+                    <li class="line">
+                        <canvas class="line_canvas" width="300" height="200"></canvas>
+                    </li>
+                    <li>최근 30일 조회수<br>데이터기반</li>
+                </ul>
+            </div>
+            <div class="line_box">
+                <ul class="line_ul01">
+                    <li class="line01">
+                        <canvas class="line_canvas01" width="300" height="200"></canvas>
+                    </li>
+                    <li>최근 30일 구독자수<br>데이터기반</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_class">
+                <a href="#" target="_blank"><b>개인정보처리방침</b></a> | <a href="#" target="_blank">서비스이용약관</a> | <a href="#"
+                    target="_blank">FINAD이용약관</a> | <a href="#" target="_blank">고객문의</a> | <a href="#"
+                    target="_blank">사이트맵</a>
+                <p> 법인명: (주) FINAD 대표자: 김유상 사업자등록번호 000-00-00000 통신판매업: 제0000-서울종로-0000호 <br> 주소 : 서울 성동구 광나루로 130 1101호
+                </p>
+                <p>COPYRIGHT (C) FINAD. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+
+</html>

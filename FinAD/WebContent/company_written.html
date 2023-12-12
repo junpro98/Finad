@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/company_written.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/company_written.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="top_div">
+                <a href="main.html"><img src="img/logo.png" alt="로고" id="main_logo"></a>
+                <div class="top_button">
+                    <a href="login.html"><img src="img/login.png" alt=""></a>
+                    <a href="signup_agree.html"><img src="img/signup.png" alt=""></a>
+                    <a href="#"><img src="img/mypage.png" alt=""></a>
+                </div>
+            </div>
+            <div class="header_search">
+                <input type="search" class="form-control" placeholder="search">
+            </div>
+        </header>
+        <div class="nav_div">
+            <nav>
+                <p class="gnbbox"></p>
+                <div class="category">
+                    <div class="category_text">카테고리</div>
+                    <ul class="nav_ul">
+                        <li class="nav_li01"><a href="company_written_list.html" target="_blank">광고게시판</a></li>
+                        <li class="nav_li02"><a href="" target="_blank">크리에이터 게시판</a></li>
+                        <li class="nav_li03"><a href="" target="_blank">자유게시판</a></li>
+                        <li class="nav_li04"><a href="" target="_blank">광고현황</a></li>
+                        <li class="nav_li05"><a href="adstore.html" target="_blank">ADStore</a></li>
+                    </ul>
+                    <div class="category_div">
+                        <div class="gnb_div">
+                            <ul class="gnb">
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="categori01.html" target="_blank">
+                                        <div><img src="img/beauty_img.png" alt="">
+                                            <div class="li_text">뷰티 * 패션</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/food_img.png" alt="">
+                                            <div class="li_text">먹방</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/BJ_img.png" alt="">
+                                            <div class="li_text">BJ * 엔터테이너</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/vlog_img.png" alt="">
+                                            <div class="li_text">vlog * 일상</div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="gnb_div">
+                            <ul class="gnb">
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/game_img.png" alt="">
+                                            <div class="li_text">게임</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/IT_img.png" alt="">
+                                            <div class="li_text">IT * 전자기기</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/music_img.png" alt="">
+                                            <div class="li_text">음악 * 춤</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/cook_img.png" alt="">
+                                            <div class="li_text">요리 * 베이킹</div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="gnb_div">
+                            <ul class="gnb">
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/travel_img.png" alt="">
+                                            <div class="li_text">여행 * 아웃도어</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/pet_img.png" alt="">
+                                            <div class="li_text">동물 * 펫</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/sports_img.png" alt="">
+                                            <div class="li_text">스포츠 * 건강</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/movie_img.png" alt="">
+                                            <div class="li_text">영화 * 애니</div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="gnb_div">
+                            <ul class="gnb">
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/car_img.png" alt="">
+                                            <div class="li_text">자동차</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/kid_img.png" alt="">
+                                            <div class="li_text">키즈 * 플레이</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/education_img.png" alt="">
+                                            <div class="li_text">교육</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/real estate_img.png" alt="">
+                                            <div class="li_text">부동산 * 투자</div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="gnb_div">
+                            <ul class="gnb">
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/Politics_img.png" alt="">
+                                            <div class="li_text">정치 * 시사</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/palette_img.png" alt="">
+                                            <div class="li_text">그림 *만들기</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/clover_img.png" alt="">
+                                            <div class="li_text">운세 * 타로</div>
+                                        </div>
+                                    </a></li>
+                                <li onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"><a href="" target="_blank">
+                                        <div><img src="img/another_img.png" alt="">
+                                            <div class="li_text">기타</div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="written_main">
+            <div class="written_title">삼성 ZFlip5 출시 언박싱 유튜브 리뷰 제작 유튜버 2분을 모집합니다.</div>
+            <div class="company">
+                <span class="company_img">회사로고이미지</span>
+                <span class="company_name">삼성전자</span>
+            </div>
+            <div id="subtitle1">모집조건</div>
+            <div class="written_text">
+                <table>
+                    <tr>
+                        <td width="15%">신청 마감일</td>
+                        <td widtd="25%">2023-08-28</td>
+                        <td width="15%">홍보 기간</td>
+                        <td width="45%">2023-09-10 ~ 2023-12-10</td>
+                    </tr>
+                    <tr>
+                        <td>평균 시청자수</td>
+                        <td>500명</td>
+                    </tr>
+                    <tr>
+                        <td>구독자 수</td>
+                        <td>400,000명</td>
+                    </tr>
+                    <tr>
+                        <td>총 광고 진행비</td>
+                        <td>700,000,000(원)</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="subtitle2">마케팅 담당자 정보</div>
+            <div class="written_info">
+                <table>
+                    <tr>
+                        <td width="36%">회사명</td>
+                        <td width="64%">삼성 전자</td>
+                    </tr>
+                    <tr>
+                        <td>이름</td>
+                        <td>윤수민</td>
+                    </tr>
+                    <tr>
+                        <td>전화번호</td>
+                        <td>010-9425-5269</td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td>
+                        <td>yunsumin23@naver.com</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="subtitle3">광고 내용</div>
+            <div class="written_text2">
+                <p>삼성전자 광고내용</p>
+            </div>
+            <div>
+            </div>
+            <p class="add_info">이런분들이 지원해 주셨어요</p>
+            <div class="chart">
+                <div class="donut_box">
+                    <ul class="donut_ul">
+                        <li class="donut"></li>
+                        <li class="donut_text">지원자 성비<br><span>남38%</span><span class="femail_color"> 여72%</span></li>
+                    </ul>
+                </div>
+                <div class="donut_box">
+                    <ul class="donut_ul01">
+                        <li class="donut01"></li>
+                        <li class="donut_text01">시청자 평균<br><span class="ten">10대</span><span class="twenty">
+                                20대</span><span class="thirty"> 30대</span><span class="forty"> 40대</span><span
+                                class="fifty"> 50대이상</span></li>
+                    </ul>
+                </div>
+                <div class="line_box">
+                    <ul class="line_ul">
+                        <li class="line">
+                            <canvas class="line_canvas" width="300" height="200"></canvas>
+                        </li>
+                        <li>구독자 평균<br>데이터기반</li>
+                    </ul>
+                </div>
+                <div class="line_box">
+                    <ul class="line_ul01">
+                        <li class="line01">
+                            <canvas class="line_canvas01" width="300" height="200"></canvas>
+                        </li>
+                        <li>지원자 수<br>데이터기반</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list">
+                <h1>#IT * 전자기기 광고 최근 현황</h1>
+                <table border="1px">
+                    <tr>
+                        <th width="10%">업체</th>
+                        <th width="25%">인플루언서</th>
+                        <th width="20%">광고비(만 원)</th>
+                        <th width="35%">홍보기간</th>
+                    </tr>
+                    <tr>
+                        <td>애플 코리아</td>
+                        <td>잇섭</td>
+                        <td>2,000</td>
+                        <td>2023-05-28 ~ 2023-06-28</td>
+                    </tr>
+                    <tr>
+                        <td>업체1</td>
+                        <td>인플루언서1, 인플루언서6 외 2명</td>
+                        <td>4,500</td>
+                        <td>2023-05-30 ~ 2023-06-08</td>
+                    </tr>
+                    <tr>
+                        <td>업체4</td>
+                        <td>인플루언서1, 인플루언서 3</td>
+                        <td>2,500</td>
+                        <td>2023-06-15 ~ 2023-06-22</td>
+                    </tr>
+                    <tr>
+                        <td>업체123</td>
+                        <td>인플루언서98</td>
+                        <td>1,000</td>
+                        <td>2023-07-22 ~ 2023-07-28</td>
+                    </tr>
+                    <tr>
+                        <td>업체123</td>
+                        <td>인플루언서514</td>
+                        <td>2,000</td>
+                        <td>2023-07-22 ~ 2023-12-28</td>
+                    </tr>
+                </table>
+            </div>
+            <div><input type="submit" value="지원하기" id="input_final" onclick="location.href='#'"></div>
+        </div>
+        <footer>
+            <div class="footer_class">
+                <a href="#" target="_blank"><b>개인정보처리방침</b></a> | <a href="#" target="_blank">서비스이용약관</a> | <a
+                    href="#" target="_blank">FINAD이용약관</a> | <a href="#" target="_blank">고객문의</a> | <a href="#"
+                    target="_blank">사이트맵</a>
+                <p> 법인명: (주) FINAD 대표자: 김유상 사업자등록번호 000-00-00000 통신판매업: 제0000-서울종로-0000호 <br> 주소 : 서울 성동구 광나루로 130
+                    1101호 </p>
+                <p>COPYRIGHT (C) FINAD. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+
+</html>

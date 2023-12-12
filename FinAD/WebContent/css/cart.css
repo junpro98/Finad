@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+header {
+    position: relative;
+    height: 100px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+header a,
+nav a {
+    text-decoration: none;
+}
+
+.top_button img {
+    height: 18px;
+    padding-left: 10px;
+}
+
+#main_logo {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 250px;
+    height: auto;
+}
+
+.top_button {
+    position: absolute;
+    top: 25px;
+    right: 0px;
+}
+
+.form-control {
+    width: 320px;
+    height: 30px;
+    font-size: 17px;
+    color: black;
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.header_search {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+
+.nav_div {
+    display: flex;
+    width: 1300px;
+    margin: 30px auto;
+}
+
+.nav_div a {
+    text-decoration: none;
+    color: #014D81;
+}
+
+.gnbbox {
+    width: 870px;
+    height: 210px;
+    background: white;
+    position: absolute;
+    top: 180px;
+    border: 5px solid #014D81;
+    border-radius: 15px;
+}
+
+.nav_div li {
+    font-family: 'Do Hyeon', sans-serif;
+    list-style: none;
+    line-height: 40px;
+}
+
+.gnb li {
+    margin-right: 23px;
+}
+
+.gnb a {
+    color: #014D81;
+    font-size: 18px;
+}
+
+.gnb img {
+    height: 25px;
+}
+
+.category {
+    color: #014D81;
+    display: flex;
+    position: absolute;
+}
+
+.category_text {
+    font-size: 25px;
+    color: #014D81;
+    line-height: 40px;
+}
+
+.nav_ul {
+    display: flex;
+    font-size: 25px;
+    font-weight: 500;
+    justify-content: space-between;
+    width: 700px;
+    margin-left: 100px;
+}
+
+.category_div {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: flex;
+    width: 1000px;
+}
+
+.category_div li {
+    padding: 5px;
+}
+
+.gnb div {
+    display: flex;
+    align-items: center;
+}
+
+.li_text {
+    padding-left: 8px;
+}
+
+.category_div li:nth-child(1) {
+    margin-left: 15px;
+}
+
+.category_div li:nth-child(2) {
+    margin-left: 15px;
+}
+
+.category_div li:nth-child(3) {
+    margin-left: 15px;
+}
+
+.category_div li:nth-child(4) {
+    margin-left: 15px;
+}
+
+.category_div li:nth-child(5) {
+    margin-left: 15px;
+}
+
+.nav_ul li a:after {
+    display: block;
+    content: "";
+    width: 90px;
+    height: 10px;
+    border-bottom: 1px solid #000;
+    margin: -15px auto;
+    transform: scaleX(0);
+    transition: all 250ms ease-in-out;
+}
+
+nav ul li:hover a:after {
+    transform: scaleX(1);
+}
+
+nav ul li:nth-child(2) a:after {
+    width: 160px;
+}
+
+nav ul li:nth-child(3) a:after {
+    width: 90px;
+}
+
+nav ul li:nth-child(4) a:after {
+    width: 70px;
+}
+
+nav ul li:nth-child(5) a:after {
+    width: 83px;
+}
+/* 여기서부터  */
+
+.basketdiv {
+    margin: 0 auto;
+    width: 1300px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 15px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+    .basketdiv .row.head {
+        border-bottom: 2px solid #888;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
+        font-weight: 500;
+    }
+    .basketdiv .data {
+        border-bottom: 1px dashed #888;
+        box-sizing: border-box;
+        cursor: pointer;
+        float: left;
+        width: 1300px;
+        display: flex;
+    }
+    .basketdiv .data .empty{
+        text-align: center;
+        padding: 12px 0;
+    }
+    .basketdiv .row.head .subdiv {
+        background-color: #f4f4f4;
+    }
+    .basketdiv .row > .subdiv {
+        display: flex;
+        float: left;
+    }
+    .basketdiv .row > .subdiv:nth-child(1) {
+        width: 50%;
+    }
+    .basketdiv .row > .subdiv:nth-child(2) {
+        width: 40%;
+    }
+    .basketdiv .row > .subdiv:nth-child(3) {
+        width: 10%;
+    }
+    .basketdiv2 .row > .subdiv:nth-child(1) {
+        width: 60%;
+    }
+    .basketdiv2 .row > .subdiv:nth-child(2) {
+        width: 40%;
+    }
+    .basketdiv .row > div > div {
+        display: block;
+        float: left;
+        text-align: center;
+        margin: 0;
+        padding: 12px 0;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .basketdiv .row.data > div > div {
+        height: 60px;
+        line-height: 60px;
+    }
+        .basketdiv .data .num .updown {
+            color: #0075ff;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        .basketdiv .check {
+            width: 10%;
+        }
+    .basketdiv .check input[type=checkbox] {
+        transform: scale(1.5);
+    }
+    .basketdiv .img{
+        width: 50%;
+    }
+    .basketdiv .pname{
+        width: 70%;
+    }
+    .basketdiv2 .pname {
+        width: 80%;
+    }
+    .basketdiv .basketprice {
+        width: 33%;
+    }
+    .basketdiv .num {
+        width: 33%;
+      min-width: 105px;
+    }
+    .basketdiv .sum {
+        width: 34%;
+      max-width: 80px;
+        color: #0000aa;
+    }
+    .basketdiv .point {
+        width: 50%;
+    }
+    .basketdiv2 .basketprice {
+        width: 25%;
+    }
+
+    .basketdiv2 .num {
+        width: 25%;
+    }
+
+    .basketdiv2 .sum {
+        width: 25%;
+        color: #0000aa;
+    }
+
+    .basketdiv2 .point {
+        width: 25%;
+    }
+    .basketdiv .basketcmd{
+        width: 100%;
+    }
+   
+    .basketdiv .data .price, .basketdiv .data .sum, .basketdiv .data .point {
+        text-align: right;
+    }
+    .baseform > tbody > tr > td:first-child {
+        width: 100px;
+    }
+
+.buttongroup {
+    padding: 11px 0;
+    margin: 50px 0;
+}
+.narrowbuttongroup{
+    margin: 15px 0;
+}
+    .buttongroup.center {
+        text-align: center;
+    }
+    .buttongroup input[type=text], .buttongroup input[type=password] {
+        height: 30px;
+    }
+    .buttongroup button, .buttongroup a {
+        margin-right: 5px;
+    }
+        .buttongroup button:last-child, .buttongroup a:last-child {
+            margin-right: 0;
+        }
+
+    .abutton, .abutton:link, .abutton:visited, .abutton:active, input[type=button] {
+        background-color: #383838;
+        border: 1px solid #888888;
+        color: #ffffff;
+        cursor: pointer;
+        letter-spacing: -1px;
+        padding: 3px 5px;
+        margin: 2px 3px;
+        width: auto;
+        word-break: keep-all;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+.abutton-alt {
+    background-color: #d3e2c6;
+}
+
+.red {
+    color:#b00;
+}
+.blue {
+  color: #0075ff;
+}
+.basketrowcmd, .sumcount, .summoney{
+    width: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-left: 1400px;
+  display: flex;
+  /* background-color: blue; */
+}
+.sumcount, .summoney{
+   
+  font-size: 30px;
+    font-weight: bold;
+}
+.buttongroup{
+  text-align: center;
+}
+.buttongroup a{
+  text-decoration: none;
+}
+.cmd a, .cmd span {
+    padding: 12px 30px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #000;
+    background-color: #f4f4f4;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+.cmd.small a, .cmd.small span {
+    padding: 6px 20px;
+    font-size: 0.8125em;
+}
+
+
+.orderform .p_num {
+   
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 푸터 시작 */
+
+footer {
+    position: absolute;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #014D81;
+}
+
+.footer_class {
+    width: 1300px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 400;
+}
+
+footer p {
+    color: #aaa;
+    font-weight: 400;
+}

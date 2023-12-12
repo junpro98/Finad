@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+/* free_board */
+#table_header{
+	width: 1300px;
+	height:700px;
+	margin: 0 auto;
+	margin-top: 80px; 
+	font-size: 18px;
+}
+#table_header table tr th{
+	font-size: 26px;
+	color: #346aff;
+}
+h1{
+	margin-bottom: 20px;
+}
+#table_header table tr td a {
+    color: #004fa8; /* 원하는 색상으로 변경 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+#table_header h1{
+	color: #050c58;
+	font-size: 70px;@g
+	
+}
+
+
+#table_header table tr td a:visited {
+    color: #808080; /* 클릭 후의 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+table tr td:nth-child(1){
+	text-align: center;
+}
+table tr td:nth-child(3){
+	text-align: center;
+}
+table tr td:nth-child(4){
+	text-align: center;
+}
+table tr td:nth-child(5){
+	text-align: center;
+}
+table tr td:nth-child(6){
+	text-align: center;
+}
+#main_table th, #main_table td {
+	padding: 3px;
+	border-bottom : 1px solid gray;
+	color: #383838;
+}
+
+#main_table table th:nth-child(1) {
+    width: 70px;
+}
+
+#main_table th:nth-child(2) {
+    width: 500px;
+}
+#main_table th:nth-child(3) {
+	width: 100px;
+}
+#main_table th:nth-child(4) {
+	width: 130px;
+}
+#main_table th:nth-child(5) {
+	width: 50px;	
+}
+#main_table th:nth-child(6) {
+	width: 50px;
+}
+/* #free_board_write_btn{ */
+/* 	width:1300px; */
+/* 	margin: 0 auto; */
+/* 	margin-top: 10px; */
+/* 	padding-left: 955px; */
+/* } */
+#free_board_write_btn input {
+	width: 55px;
+	height: 25px;
+	float: left;
+}
+#free_board_search {
+	width:340px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+select{
+	width:70px;
+	height: 25px;
+	text-align: center;
+}
+/*게시글 베스트*/
+#rank1_table{
+	position: fixed;
+	left: 1250px;
+	top: 323px;
+	font-size: 16px;
+	border: 3px solid #ff4646;
+	border-radius: 5px;
+}
+#rank1_table h2{
+	padding-bottom: 10px;
+	color: #ff4646;
+}
+#rank1_table tr td {
+	height: 27px;
+}
+#rank1_table td:nth-child(1) {
+    width: 30px;
+}
+
+#rank1_table td:nth-child(2) {
+    width: 260px;
+}
+#rank1_table td:nth-child(3) {
+	width: 50px;
+}
+#rank1_table td:nth-child(4) {
+	width: 50px;
+}
+/*추천글 베스트*/
+#rank2_table{
+	position: fixed;
+	left: 1250px;
+	top: 543px;
+	font-size: 16px;
+	border: 3px solid #5b5bff;
+	border-radius: 5px;
+}
+#rank2_table h2{
+	padding-bottom: 10px;
+	color: #5b5bff;
+}
+#rank2_table tr td {
+	height: 27px;
+}
+#rank2_table td:nth-child(1) {
+    width: 30px;
+}
+
+#rank2_table td:nth-child(2) {
+    width: 260px;
+}
+#rank2_table td:nth-child(3) {
+	width: 50px;
+}
+#rank2_table td:nth-child(4) {
+	width: 50px;
+}
+/*글쓰기 버튼*/
+#free_board_write_btn{
+	width: 882px;
+	margin-top: 10px;
+
+}
+#free_board_write_btn input {
+    width: 85px;
+    height: 35px;
+    font-size: 18px;
+    color: white;
+    border: 1px solid #346aff;
+    border-radius: 3px;
+    background-color: #346aff;
+    cursor: pointer;
+	float: right;
+}
+/* 페이징 & 검색 */
+#free_board_footer{
+	width: 880.7px;
+	margin-left: 301.5px;
+	margin-top: 100px;
+}
+#pageList{
+	text-align: center;
+}
+#pageList a{
+	color: black;
+	text-decoration: none; /* 밑줄 제거 */
+}
+
+#free_board_search input[type="search"] {
+	width: 200px;
+	height: 25px;
+}
+#free_board_search input[type="submit"]{
+	width: 50px;
+	height: 25px;
+}

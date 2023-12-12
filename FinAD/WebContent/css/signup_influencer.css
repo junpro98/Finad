@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+
+#signup_input {
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 550px;
+	font-size: 20px;
+	height: 1400px;
+}
+
+#input_title {
+	width: 550px;
+	height: 50px;
+	color: #346aff;
+	text-align: center;
+	float: left;
+	font-size: 40px;
+	padding: 10px;
+	margin-bottom: 30px; 
+	} 
+	
+.input_info {
+	width: 200px;
+	height: 50px;
+	margin-top: 30px;
+	margin-right: 50px;
+	color: #000080;
+	text-align: center;
+	float: left;
+	background-color: #ffffff;
+	padding: 10px;
+	font-size: 26px;
+}
+
+
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type='checkbox'],
+  input[type='radio'] {
+    --active: #275EFE;
+    --active-inner: #fff;
+    --focus: 2px rgba(39, 94, 254, .3);
+    --border: #BBC1E1;
+    --border-hover: #275EFE;
+    --background: #fff;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    transition: background .3s, border-color .3s, box-shadow .2s;
+    &:after {
+      content: '';
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute;
+      transition: transform var(--d-t, .3s) var(--d-t-e, ease), opacity var(--d-o, .2s);
+    }
+    &:checked {
+      --b: var(--active);
+      --bc: var(--active);
+      --d-o: .3s;
+      --d-t: .6s;
+      --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+    }
+    &:disabled {
+      --b: var(--disabled);
+      cursor: not-allowed;
+      opacity: .9;
+      &:checked {
+        --b: var(--disabled-inner);
+        --bc: var(--border);
+      }
+      & + label {
+        cursor: not-allowed;
+      }
+    }
+    &:hover {
+      &:not(:checked) {
+        &:not(:disabled) {
+          --bc: var(--border-hover);
+        }
+      }
+    }
+    &:focus {
+      box-shadow: 0 0 0 var(--focus);
+    }
+    &:not(.switch) {
+      width: 20px;
+      &:after {
+        opacity: var(--o, 0);
+      }
+      &:checked {
+        --o: 1;
+      }
+    }
+    & + label {
+      font-size: 14px;
+      line-height: 21px;
+      display: inline-block;
+      vertical-align: top;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+  }
+  input[type='checkbox'] {
+    &:not(.switch) {
+      border-radius: 7px;
+      &:after {
+        width: 5px;
+        height: 9px;
+        border: 2px solid var(--active-inner);
+        border-top: 0;
+        border-left: 0;
+        left: 7px;
+        top: 4px;
+        transform: rotate(var(--r, 20deg));
+      }
+      &:checked {
+        --r: 43deg;
+      }
+    }
+    &.switch {
+      width: 38px;
+      border-radius: 11px;
+      &:after {
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background: var(--ab, var(--border));
+        transform: translateX(var(--x, 0));
+      }
+      &:checked {
+        --ab: var(--active-inner);
+        --x: 17px;
+      }
+      &:disabled {
+        &:not(:checked) {
+          &:after {
+            opacity: .6;
+          }
+        }
+      }
+    }
+  }
+
+
+.input_infoca {
+	width: 550px;
+	height: 50px;
+	margin-top: 30px;
+	margin-right: 50px;
+	color: #000080;
+	text-align: center;
+	float: left;
+	background-color: #ffffff;
+	padding: 6px;
+	font-size: 30px;
+}
+
+#input_info3 {
+	width: 550px;
+	height: 200px;
+	margin-top: 30px;
+	border-radius: 10px;
+	border: 2px solid #808080;
+	float: left;
+	background-color: #f8f8f8;
+	padding: 10px;
+	font-size: 15px;	
+}
+
+.input_infoad {
+	width: 100px;
+	height: 110px;
+	margin-top: 100px;
+	margin-left: 40px;
+	color: #000080;
+	text-align: right;
+	float: left;
+	background-color: #ffffff;
+	padding: 20px;
+	font-size: 26px;
+}
+
+
+#input_info02 {
+	font-family: 'Malgun Gothic';
+	width: 300px;
+	height: 50px;
+	margin-top: 30px;
+	border-radius: 10px;
+	border: 2px solid #808080;
+	float: left;
+	background-color: #F9F9F9;
+	padding: 10px;
+	font-size: 15px;
+}
+
+.input_info2 {
+	font-family: 'Malgun Gothic';
+	width: 300px;
+	height: 50px;
+	margin-top: 30px;
+	border-radius: 10px;
+	border: 2px solid #808080;
+	float: left;
+	background-color: #F9F9F9;
+	padding: 10px;
+	font-size: 15px;
+}
+
+
+.radio_box { display: inline-block; *display: inline; *zoom: 1; position: relative; padding-left: 25px; margin-right: 10px; cursor: pointer; font-size: 14px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+/* 기본 라디오 버튼 숨기기 */
+.radio_box input[type="radio"] { display: none; }
+
+/* 선택되지 않은 라디오 버튼 스타일 꾸미기 */
+.on { width: 20px; height: 20px; background: #ddd; border-radius: 50%; position: absolute; top: 0; left: 0; }
+
+/* 선택된 라디오 버튼 스타일 꾸미기 */
+.radio_box input[type="radio"]:checked + .on { background: #f86480; }
+.on:after { content: ""; position: absolute; display: none; }
+.radio_box input[type="radio"]:checked + .on:after { display: block; }
+.on:after { width: 10px; height: 10px; background: #fff; border-radius: 50%; position: absolute; left: 5px; top: 5px; }
+
+
+
+
+.input_phone {
+	width: 50px;
+	font-family: 'Malgun Gothic';
+	height: 30px;
+	font-size: 13px;
+}
+
+.input_phone3 {
+	width: 215px;
+	font-family: 'Malgun Gothic';
+	height: 30px;
+	font-size: 13px;
+}
+
+#input_final {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-left: 30px;
+	width: 400px;
+	height: 61px;
+	font-size: 25px;
+	color: white;
+	border: 1px solid #346aff;
+	border-radius: 3px;
+	background-color: #346aff;
+	cursor: pointer;
+}
+
+.subnit_div {
+	text-align: center;
+}
+
+#addr_btn {
+	font-family: 'Malgun Gothic';
+	width: 300px;
+	height: 180px;
+	margin-top: 30px;
+	border-radius: 15px;
+	border: 2px solid #808080;
+	float: right;
+	background-color: #f8f8f8;
+	padding: 10px;
+	font-size: 20px;
+}
+
+#sample6_postcode {
+	width: 100px;
+	height: 30px;
+	font-size: 17px;
+}
+
+#sample6_address {
+	width: 270px;
+	height: 30px;
+	font-size: 17px;
+}
+
+#sample6_detailAddress {
+	width: 270px;
+	height: 30px;
+	font-size: 17px;
+}
+
+#sample6_extraAddress {
+	width: 270px;
+	height: 30px;
+	font-size: 17px;
+}
+
+#addr_btn input {
+	font-family: 'Malgun Gothic';
+	padding: 5px;
+	margin: 3px;
+}
+
+#check_addr{
+	width: 270px;
+	text-align: right;
+	margin-left: 20px;
+	margin-top: 18px;
+	font-size: 20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#result{
+	font-size: 15px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+
+
+#check_email{
+	margin-left: 400px;
+	font-size: 20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#check_phone{
+	width: 270px;
+	text-align: right;
+	margin-left: 20px;
+	margin-top: 5px;
+	font-size: 20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#check {
+	margin-left: 250px;
+	font-size: 20px;
+	width: 300px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	float: left;
+}

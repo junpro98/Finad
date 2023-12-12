@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+header {
+    position: relative;
+    height: 100px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+header a,
+nav a {
+    text-decoration: none;
+}
+
+.top_button img {
+    height: 18px;
+    padding-left: 10px;
+}
+
+#main_logo {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 250px;
+    height: auto;
+}
+
+.top_button {
+    position: absolute;
+    top: 25px;
+    right: 0px;
+}
+
+.form-control {
+    width: 320px;
+    height: 30px;
+    font-size: 17px;
+    color: black;
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.header_search {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+
+.nav_div {
+    display: flex;
+    width: 1300px;
+    margin: 30px auto;
+}
+
+.nav_div a {
+    text-decoration: none;
+    color: #014D81;
+}
+
+.gnbbox {
+    width: 870px;
+    height: 210px;
+    background: white;
+    position: absolute;
+    top: 180px;
+    border: 5px solid #014D81;
+    border-radius: 15px;
+}
+
+.nav_div li {
+    font-family: 'Do Hyeon', sans-serif;
+    list-style: none;
+    line-height: 40px;
+}
+
+.gnb li {
+    margin-right: 23px;
+}
+
+.gnb a {
+    color: #014D81;
+    font-size: 18px;
+}
+
+.gnb img {
+    height: 25px;
+}
+
+.category {
+    color: #014D81;
+    display: flex;
+    position: absolute;
+}
+
+.category_text {
+    font-size: 25px;
+    color: #014D81;
+    line-height: 40px;
+}
+
+.nav_ul {
+    display: flex;
+    font-size: 25px;
+    font-weight: 500;
+    justify-content: space-between;
+    width: 700px;
+    margin-left: 100px;
+}
+
+.category_div {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: flex;
+    width: 1000px;
+}
+
+.category_div li {
+    padding: 5px;
+}
+
+.gnb div {
+    display: flex;
+    align-items: center;
+}
+
+.li_text {
+    padding-left: 8px;
+}
+
+.category_div li:nth-child(1) {
+    margin-left: 15px;
+}
+
+.category_div li:nth-child(2) {
+    margin-left: 15px;
+}
+
+.category_div li:nth-child(3) {
+    margin-left: 15px;
+}
+
+.category_div li:nth-child(4) {
+    margin-left: 15px;
+}
+
+.category_div li:nth-child(5) {
+    margin-left: 15px;
+}
+
+.nav_ul li a:after {
+    display: block;
+    content: "";
+    width: 90px;
+    height: 10px;
+    border-bottom: 1px solid #000;
+    margin: -15px auto;
+    transform: scaleX(0);
+    transition: all 250ms ease-in-out;
+}
+
+nav ul li:hover a:after {
+    transform: scaleX(1);
+}
+
+nav ul li:nth-child(2) a:after {
+    width: 160px;
+}
+
+nav ul li:nth-child(3) a:after {
+    width: 90px;
+}
+
+nav ul li:nth-child(4) a:after {
+    width: 70px;
+}
+
+nav ul li:nth-child(5) a:after {
+    width: 83px;
+}
+
+
+/* 푸터 시작 */
+footer {
+    position: absolute;
+    width: 100%;
+    margin-top: 220px;
+    background-color: #014D81;
+}
+
+.footer_class {
+    width: 1300px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 400;
+}
+
+footer p {
+    color: #aaa;
+    font-weight: 400;
+}
+
+
+#signup_main {
+    margin: 80px auto;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+}
+
+.btn{
+    width: 500px;
+    height: 60px;
+    background-color: rgb(211, 232, 255);
+    margin-top: 55px;
+    font-size: 19px;
+    border-radius: 26px;
+}

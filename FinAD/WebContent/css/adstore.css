@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+
+#contain {
+	width: 1300px;
+	margin: 0 auto;
+}
+
+#hhh {
+	margin-top: 50px;
+	width: 1300px;
+	overflow: hidden;
+}
+
+
+.Slidesbackground {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+.slideshow-image{
+    width: 1300px;
+    height: 500px;
+    overflow: hidden;
+    
+}
+.mySlides {
+    width: 1300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.advertising_type {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.advertising_type_p{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    color: #FF766B;
+    text-decoration: none;
+}
+
+.lil_p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #014D81;
+}
+
+.advertising_type li {
+    list-style: none;
+    text-align: center;
+}
+
+.advertising_type a {
+	text-decoration: none;
+}
+
+.advertising_type img {
+    height: 110px;
+    width: 110px;
+}
+
+.advertising_ul {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+
+
+
+.h1 {
+	margin-top: 20px;
+  font-size: 30px;
+  color: #808080;
+  font-weight: 500;
+}
+
+.section {
+  width: 1300px;
+  margin: 0px auto;
+}
+
+#product-list a{
+  text-decoration: none;
+  color: black;
+}
+
+.product-card{
+  width: 180px;
+  height: 300px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+#product-list{
+  margin:12px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1300px;
+  justify-content: space-between;
+}
+
+.product-img{
+  width: 220px;
+  height: 220px;
+  border: 2px solid #c0c0c0;
+  border-radius: 12px;
+ 
+}
+
+.product-contents{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  font-weight: bold;
+
+}
+
+.product-name{
+  font-size: 15px;
+}
+
+.product-price{
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.product-seller{
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-right: 2px;
+}
+
+.product-avatar{
+  width: 24px;
+  margin-right: 2px;
+}
+
+.cart_div img {
+  width: 64px;
+  position: fixed;
+  right: 200px;
+  bottom: 210px;
+  background-color: white;
+  border: 3px solid #014D81;
+  border-radius: 50%;
+}
+
+.product_div {
+  width: 1300px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+.product_search {
+  width: 500px;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
+  border: 5px solid #FF766B;
+  font-size: 30px;
+  cursor: pointer;
+  color: #808080;
+}
+
+.mm {
+  width: 1300px;
+  height: 500px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mm li {
+  list-style: none;
+}
+
+.right_div {
+  width: 630px;
+  height: 300px;
+  font-size: 40px;
+  color: #6C97CF;
+}
+#ele{
+  font-size: 40px;
+  color: #6C97CF;
+}
+
+#fash{
+  font-size: 40px;
+  color: #804040;
+}
+
+.right_div_div {
+  display: flex;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.right_div_div ul {
+  display: flex;
+}
+
+.right_div_div li {
+  display: inline-block;
+}
+
+.right_div_div img {
+  width: 630px;
+  height: 450px;
+}
+
+.left_div {
+  width: 630px;
+  height: 300px;
+  font-size: 40px;
+  color: #664033;
+}
+
+.m_div { 
+  display: flex;
+}
+
+.left_div_div01, .left_div_div02 {
+  margin-top: 15px;
+}
+
+.left_div_div01 img {
+  width: 310px;
+  height: 520px;
+}
+
+.left_div_div01 strong {
+  /* display: block; */
+  text-indent: -9999em;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.left_div_div02 ul {
+  width: 310px;
+  height: 450px;
+}
+
+.left_div_div02 img {
+  width: 300px;
+  height: 140px;
+}
+
+#product-img{
+	width: 300px;
+	height: 250px;
+}
+
+.product-cardbt{
+  width: 180px;
+  height: 300px;
+}

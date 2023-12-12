@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+.main {
+	width: 1300px;
+	margin: 80px auto;
+	height: 500px;
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: 500;
+	color: #FF766B;
+}
+
+.top_info {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.div_img img {
+	height: 128px;
+	width: 128px;
+	border-radius: 50%
+}
+
+.top_info li {
+	list-style: none;
+	padding: 5px;
+	font-size: 20px;
+	
+}
+
+.div_ul {
+	margin-left: 30px;
+}
+
+hr {
+	width: 1300px;
+	margin: 15px auto;
+	border: 2px solid #014D81;
+}
