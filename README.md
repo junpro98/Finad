@@ -8,7 +8,7 @@ HTML,CSS,JS,JAVA,MySQL,Mybatis,AWS
 호스팅 주소
 http://13.209.65.121:8080/main.jsp
 
-블로구 주소
+블로그 주소
 https://blog.naver.com/junpro98
 
 기능
