@@ -3,7 +3,7 @@
 ###프로젝트 소개
 
 사용기술
-HTML,CSS,JS,JAVA,MySQL,Mybatis,AWS
+HTML,CSS,JS,JAVA,MySQL,Mybatis,AWS,Servlet
 
 호스팅 주소
 http://13.209.65.121:8080/main.jsp
